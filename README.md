@@ -2,6 +2,71 @@
 
 Pluto is like Ruby's fun cousin, but built entirely in C#! 🌟 It's an object-oriented interpreter with cool standard libraries, including a Plugin system—just don’t expect it to be a Ruby clone; it's got its own groove! 😎🚀
 
+```ruby 
+module Vectors
+    class VectorBaseModel
+        #BaseModel Ideas Here
+    end
+    class Vector3 < VectorBaseModel
+
+        def initialize(x,y,z)
+            @x_val = x.to_s.to_f
+            @y_val = y.to_s.to_f
+            @z_val = z.to_s.to_f
+            
+            @points = 3
+        end
+
+        def add(other)
+            @x_val = (@x_val + other.x).to_s
+            @y_val = (@y_val + other.y).to_s
+            @z_val = (@z_val + other.z).to_s
+        end
+
+        def subt(other)
+            @x_val = (@x_val - other.x).to_s
+            @y_val = (@y_val - other.y).to_s
+            @z_val = (@z_val - other.z).to_s
+        end
+    
+        def mult(other)
+            @x_val = (@x_val * other.x).to_s
+            @y_val = (@y_val * other.y).to_s
+            @z_val = (@z_val * other.z).to_s
+        end
+
+        def div(other)
+            @x_val = (@x_val / other.x).to_s
+            @y_val = (@y_val / other.y).to_s
+            @z_val = (@z_val / other.z).to_s
+        end
+    end
+end
+
+vector3 = Vectors::Vector3.new(2,2,2).yield() do |vec3|
+
+    print(vec3.x+vec3.y+vec3.z)
+
+    vec3.add(Vectors::Vector3.new(2,3,4))
+
+    vec3.subt(Vectors::Vector3.new(34,65,77))
+
+    vec3.mult(Vectors::Vector3.new(2.4,2.3,2))
+
+    vec3.div(Vectors::Vector3.new(2,2.1,1.98))
+
+    #puts(vec3.to_s())
+
+    puts("x: "+vec3.x.to_d.to_s ,
+         "y: "+vec3.y.to_d.to_s ,
+         "z: "+vec3.z.to_d.to_s )
+
+    #puts(vec3.to_hs())
+
+end
+```
+
+
 # 🌌 Pluto: Because Your Backend Deserves a Planet-Sized Upgrade!
 
 ## 🚀 Why Pluto? Because Earth-based Languages are So Last Season!
