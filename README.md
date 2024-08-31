@@ -1,47 +1,10 @@
 # Pluto Prigramming Language
 
-Pluto is like Ruby's fun cousin, but built entirely in C#! 🌟 It's an object-oriented interpreter with cool standard libraries, including a Plugin system—just don’t expect it to be a Ruby clone; it's got its own groove! 😎🚀
+*Remember me? I'm that side project you might’ve forgotten—Roobi! Once left behind by my original creators, but fear not! Yuri has swooped in like a coding superhero to rescue me from the dusty archives. Now, I'm back in action and ready to shine!*
+> Pluto is like Ruby's fun cousin, but built entirely in GO! 🌟 It's an object-oriented interpreter with cool standard libraries, including a Plugin system—just don’t expect it to be a Ruby clone; it's got its own groove! 😎🚀
 
 ```ruby 
-module Vectors
-    class VectorBaseModel
-        #BaseModel Ideas Here
-    end
-    class Vector3 < VectorBaseModel
-
-        def initialize(x,y,z)
-            @x_val = x.to_s.to_f
-            @y_val = y.to_s.to_f
-            @z_val = z.to_s.to_f
-            
-            @points = 3
-        end
-
-        def add(other)
-            @x_val = (@x_val + other.x).to_s
-            @y_val = (@y_val + other.y).to_s
-            @z_val = (@z_val + other.z).to_s
-        end
-
-        def subt(other)
-            @x_val = (@x_val - other.x).to_s
-            @y_val = (@y_val - other.y).to_s
-            @z_val = (@z_val - other.z).to_s
-        end
-    
-        def mult(other)
-            @x_val = (@x_val * other.x).to_s
-            @y_val = (@y_val * other.y).to_s
-            @z_val = (@z_val * other.z).to_s
-        end
-
-        def div(other)
-            @x_val = (@x_val / other.x).to_s
-            @y_val = (@y_val / other.y).to_s
-            @z_val = (@z_val / other.z).to_s
-        end
-    end
-end
+require("vec")
 
 vector3 = Vectors::Vector3.new(2,2,2).yield() do |vec3|
 
@@ -103,6 +66,27 @@ Pluto may have been demoted from planet status, but our Pluto is here to dominat
 ## 🛸 Installation
 
 JUST COPY AND PASTE `this dir` TO YOUR %%PATH%% , WHETHER YOU ARE IN WINDOWS , LINUX OR EVEN MACOS, MAC SUCKS BTW
+
+```ps
+Microsoft Windows [Version 10.0.19045.4780]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Program Files\PlutoL>dir
+ Volume in drive C is SYSTEM_256M2
+ Volume Serial Number is 3EEB-71D5
+
+ Directory of C:\Program Files\PlutoL
+
+22/08/2024  06:40 am    <DIR>          .
+22/08/2024  06:40 am    <DIR>          ..
+21/08/2024  09:40 am    <DIR>          executables
+22/08/2024  06:39 am    <DIR>          lib
+13/08/2024  01:06 am    <DIR>          utils
+               0 File(s)              0 bytes
+               5 Dir(s)  106,719,240,192 bytes free
+
+C:\Program Files\PlutoL>
+```
 
 ### 💻 Additional Installation Notes:
 - WINDOWS USERS: PREPARE FOR BLUESCREENS OF JOY!
